@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include <iostream>
 using namespace std;
 
 class Inchworm {
@@ -7,19 +8,18 @@ class Inchworm {
   int lunchtime(int branch, int rest, int leaf) {
     
     //init counter for number of leaves
+    int interval = rest;
     int numLeavesEaten = 0;
 
     //iterate through branch till the end of branch 
-    for (int currentPosition = 0; currentPosition < branch; currentPosition + rest){
+    for (int i = 0; i < branch; i += interval){
 
-        if (fmod(currentPosition,leaf) == 0){
+        if (fmod(i,leaf) == 0){
             numLeavesEaten++;
         }
     }
 
     return numLeavesEaten;
     }
-
-  };
-
   
+  };
