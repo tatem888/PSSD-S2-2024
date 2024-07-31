@@ -39,6 +39,6 @@ class ThrowTheBall {
 
             return numPasses;
         
-        };
+        }
 
     };

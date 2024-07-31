@@ -8,13 +8,22 @@ Week 1
 Problem 1 - Inchworm
 
 Design Thinking:
-
 Initially, I though of two solutions to the problem. The first would involve creating a vector of 0s with 1s at every point where a leaf would be present. Then, i could iterate through the vector, and every time the inchworm was due to rest, It would check the corresponding value in the vector to determine if there was a leaf there. This solution would work, but i also thought that there could be a mathematical solution that wouldn't require me to check branches where the worm doesn't rest or where there is a leaf. I decided to focus on a mathematical approach, as it will likely be more efficient than the vector approach.
 
 Troubleshooting:
-
 I was able to implement the solution using the modulo operator to determine whether at each rest stop there would also be a leaf, and repeating this at each rest stop until the end of the branch was reached.
+The main issue that I ran into was with the upload and submission, where I took some time to get the files and submissions in the correct format.
+I also had some issues with the implementation of the for loop where i wasnt accessing the last node of the branch.
 
-The main issue that I ran into was with the upload and submission, where I took some time to get the files and submissions in the correct format. 
+Problem 2 - ThrowTheBall
+
+My first thought for this problem was to implement a cyclic list that would closely represent the actual circle of friends, being a doubly linked list where the first and last elements would be linked.
+This implementation would be tough and id have to make sure i kept good track of the pointers and current position of the ball. 
+A second implementation was to again make use of the modulo operator, so that if i iterated past the end of the list on a certain pass, i could tell where it would be as the position would be the mod of the index and the number of players.
+This way, i could just use a vector that tracked how many times the ball fell on each position.
+
+
+
+
 
 
