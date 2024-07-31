@@ -12,7 +12,7 @@ class Inchworm {
     int numLeavesEaten = 0;
 
     //iterate through branch till the end of branch 
-    for (int i = 0; i < branch; i += interval){
+    for (int i = 0; i <= branch; i += interval){
 
         if (fmod(i,leaf) == 0){
             numLeavesEaten++;
