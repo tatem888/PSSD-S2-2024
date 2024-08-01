@@ -42,3 +42,7 @@ public:
         return numPasses;
     }
 };
+
+int main(){
+    printf("ball");
+}
