@@ -39,7 +39,7 @@ class StreetParking {
             
             else if (currentPosition == 'S') 
             {
-                validParking.at(1) = 1;
+                validParking.at(i) = 1;
 
                 try{ validParking.at(i-1) = 1;}
                 catch(const std::exception& e){}
@@ -60,7 +60,12 @@ class StreetParking {
                 freeParks += 1;
             }
         }
+        for (int i = 0; i < streetLength; i++)
+        {
+            std::cout << validParking[i] << std::endl;
+        }
         
+
         return freeParks;   
     }
 };

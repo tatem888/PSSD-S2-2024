@@ -4,5 +4,5 @@
 int main(){
     StreetParking a;
 
-    std::cout << a.freeParks("-B-D");
+    std::cout << a.freeParks("---B--S-D--S--");
 }
