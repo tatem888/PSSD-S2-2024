@@ -22,6 +22,10 @@ This implementation would be tough and id have to make sure i kept good track of
 A second implementation was to again make use of the modulo operator, so that if i iterated past the end of the list on a certain pass, i could tell where it would be as the position would be the mod of the index and the number of players.
 This way, i could just use a vector that tracked how many times the ball fell on each position.
 
+I ended up implementing the program in the second way, and it worked out to be alot more straightfoward than i had imagined. Once i confirmed that the modulo operator would give me the correct operation i was looking for, i was easily able to implement it for a left and right hand pass (depending on the even or odd amount of receptions for each player)
+
+
+
 
 
 

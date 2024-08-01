@@ -14,7 +14,7 @@ public:
         int maxNum = M;
         int passDistance = L;
 
-        int currentPlayer = 1;
+        int currentPlayer = 0;
         int numPasses = 0;
 
         // init players vector with 0s (number of recieves per player) and give player 1 one recieve (start with the ball)
@@ -42,7 +42,3 @@ public:
         return numPasses;
     }
 };
-
-int main(){
-    printf("ball");
-}
