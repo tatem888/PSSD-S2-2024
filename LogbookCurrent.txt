@@ -23,6 +23,18 @@ A second implementation was to again make use of the modulo operator, so that if
 This way, i could just use a vector that tracked how many times the ball fell on each position.
 
 I ended up implementing the program in the second way, and it worked out to be alot more straightfoward than i had imagined. Once i confirmed that the modulo operator would give me the correct operation i was looking for, i was easily able to implement it for a left and right hand pass (depending on the even or odd amount of receptions for each player)
+I just had to ensure that i was working with the correct values, as my program initially ran into issues when i was trying to access negative elements. 
+
+Problem 3 - Street Parking
+
+My plan for this problem is to itterate through the 'street' string and at each section of road, mark down in a seperate vector any spots that are unavaliable to park in. By initially assuimg that all spots are open and only marking them as unavaliable when a condition is met, i should be able to cover all of the spots.
+i will then have a vector that highlights exactly where i can park, and it will also have accounted for any double ups that could be caused by a driveway and bus stop being next to eachother for example
+
+some things i had to look into to help solve this problem were how to get the lenght of a string, so that i could make a corresponding vector with valid parking
+Mainly familiarising myself with string operations
+
+I also had to work on accessing out of bounds values, as my program had the posibility to access values outside of the street if for example a bus stop was in the first position, it would try to access the two positions before the bus stop, whihc in that case dont exist
+to work around this, i used the .at() function and a try-catch pair to handle the excpetion that the .at() fucntion would throw if it accessed an put of range element.
 
 
 
