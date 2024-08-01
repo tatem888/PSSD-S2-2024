@@ -19,9 +19,9 @@ public:
 
         // init players vector with 0s (number of recieves per player) and give player 1 one recieve (start with the ball)
         vector<int> players(numPlayers, 0);
-        players[0] = 1;
+        players[currentPlayer] = 1;
 
-        while (players[currentPlayer] != maxNum)
+        while ((players[currentPlayer]) < maxNum)
         {
 
             if (players[currentPlayer] % 2 == 0) // Even, Ball goes left
@@ -32,7 +32,7 @@ public:
 
             else // Odd, ball goes right
             {
-                currentPlayer = (currentPlayer - passDistance) % numPlayers;
+                currentPlayer = (currentPlayer - passDistance + numPlayers) % numPlayers;
                 players[currentPlayer]++;
             }
 
