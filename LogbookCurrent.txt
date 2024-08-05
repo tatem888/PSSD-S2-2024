@@ -43,6 +43,13 @@ There will also be points where the program would need to check out of bounds to
 
 After begining my implementation, i realised that i could check the all the possible squares from largest to smallest, as if i find a square of the max size i could retunr the answer straight away without haveung to check the rest of the grid, and if i didnt find it i could iterate down to the next largest square
 
+Problem 5 - AzimuthMonitoring
+
+This problem seems straight foward, i plan to use a number of switch statemnts for each of the possible moves for the robot, and keeping track of its current direction until the last instruction is reached.
+
+during my implementation, i realised that i cannot use switch statements for strings, so for ease of coding i changed the switch to an else-if ladder.
+
+I was initially stuck on how to handle the case of "LEFT X", and "RIGHT X" but after looking into string manupulation i was able to seperate the string into its substrings and extract the value so i knw how much i needed to turn the robot by
 
 
 
