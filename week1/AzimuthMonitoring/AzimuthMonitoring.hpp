@@ -44,7 +44,15 @@ public:
             }
         }
 
-        return direction % 360;
+        int output = std::fmod(direction,360);
+
+        if (output < 0)
+        {
+            output = output + 360;
+        }
+        
+
+        return output;
 
     };
     
